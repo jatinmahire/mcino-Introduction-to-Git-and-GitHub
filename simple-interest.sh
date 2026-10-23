@@ -16,6 +16,7 @@
 # Output:
 # simple interest = p*t*r
 
+# Prompt user for input values
 echo "Enter the principal:"
 read p
 echo "Enter rate of interest per year:"
@@ -23,6 +24,9 @@ read r
 echo "Enter time period in years:"
 read t
 
+# Compute simple interest
 s=`expr $p \* $t \* $r / 100`
+
+# Output the calculated simple interest
 echo "The simple interest is: "
 echo $s
